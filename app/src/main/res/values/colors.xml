@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#008577</color>
+    <color name="colorAccent">#EEB307</color>
+    <color name="main_color">#1E1C29</color>
+    <color name="black_blur_50">#80000000</color>
+    <color name="color_categories">#F44236</color>
+    <color name="color_metascore">#6B9C77</color>
+    <color name="color_edittext_search">#5C5B69</color>
+    <color name="color_number_like_actors">#5E6470</color>
+    <color name="color_background_details_people">#333A4C</color>
+</resources>

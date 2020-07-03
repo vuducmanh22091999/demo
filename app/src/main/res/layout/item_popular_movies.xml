@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/itemPopularMovies_imgPosterMovies"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/img_poster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvNameMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/the_walking_dead"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/itemPopularMovies_imgPosterMovies"
+        app:layout_constraintTop_toTopOf="@id/itemPopularMovies_imgPosterMovies" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvTimeOfMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_of_movies"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/itemPopularMovies_tvNameMovies"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_tvNameMovies" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvCategoriesMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/categories_movies"
+        android:textColor="@android:color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@+id/itemPopularMovies_tvTimeOfMovies"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_tvTimeOfMovies" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/director"
+        android:textColor="@android:color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@+id/itemPopularMovies_tvCategoriesMovies"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_tvCategoriesMovies" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvNameDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_director"
+        android:textSize="9sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/itemPopularMovies_tvDirector"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_tvCategoriesMovies" />
+
+    <ImageView
+        android:id="@+id/itemPopularMovies_imgEvaluate"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintStart_toStartOf="@+id/itemPopularMovies_tvDirector"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_tvDirector" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvPointEvaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="@string/point_evaluate"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemPopularMovies_imgEvaluate"
+        app:layout_constraintStart_toEndOf="@id/itemPopularMovies_imgEvaluate"
+        app:layout_constraintTop_toTopOf="@id/itemPopularMovies_imgEvaluate" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvTotalEvaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/point_total_evaluate"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemPopularMovies_tvPointEvaluate"
+        app:layout_constraintStart_toEndOf="@id/itemPopularMovies_tvPointEvaluate" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvNumberReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/number_reviews"
+        android:textSize="8sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/itemPopularMovies_imgEvaluate"
+        app:layout_constraintTop_toBottomOf="@id/itemPopularMovies_imgEvaluate" />
+
+    <TextView
+        android:id="@+id/itemPopularMovies_tvReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/reviews"
+        android:textSize="8sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/itemPopularMovies_tvNumberReviews"
+        app:layout_constraintTop_toTopOf="@id/itemPopularMovies_tvNumberReviews" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_begin="256dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

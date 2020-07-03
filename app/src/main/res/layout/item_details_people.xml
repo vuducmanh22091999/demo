@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/itemDetailsPeople_vContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_background_details_people"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemDetailsPeople_imgPosterMovies" />
+
+    <ImageView
+        android:id="@+id/itemDetailsPeople_imgPosterMovies"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_poster"
+        app:layout_constraintStart_toStartOf="@id/itemDetailsPeople_vContent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvTitleMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/the_walking_dead"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/itemDetailsPeople_imgPosterMovies"
+        app:layout_constraintTop_toTopOf="@id/itemDetailsPeople_vContent" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvPointAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/point_evaluate"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="@id/itemDetailsPeople_vContent"
+        app:layout_constraintTop_toTopOf="@id/itemDetailsPeople_vContent" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvTypeMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_type_movies"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintStart_toStartOf="@id/itemDetailsPeople_tvTitleMovies"
+        app:layout_constraintTop_toBottomOf="@id/itemDetailsPeople_tvTitleMovies"
+        tool:text="@string/search" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/release_date"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/itemDetailsPeople_tvTypeMovies"
+        app:layout_constraintTop_toBottomOf="@id/itemDetailsPeople_tvTypeMovies" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/itemDetailsPeople_tvReleaseDate"
+        app:layout_constraintTop_toTopOf="@id/itemDetailsPeople_tvReleaseDate"
+        tool:text="@string/date" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/overview"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/itemDetailsPeople_tvReleaseDate"
+        app:layout_constraintTop_toBottomOf="@id/itemDetailsPeople_tvReleaseDate" />
+
+    <TextView
+        android:id="@+id/itemDetailsPeople_tvContentOverview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itemDetailsPeople_tvOverview"
+        app:layout_constraintEnd_toEndOf="@id/itemDetailsPeople_vContent"
+        app:layout_constraintStart_toEndOf="@id/itemDetailsPeople_tvOverview"
+        tool:text="@string/about_movies" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="216dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
